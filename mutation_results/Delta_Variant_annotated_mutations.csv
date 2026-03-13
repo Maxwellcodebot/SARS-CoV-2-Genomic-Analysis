@@ -1,0 +1,103 @@
+Position,Reference,Variant,Variant_Strain,Gene,Product
+1,A,-,Delta Variant,Intergenic,None
+2,T,-,Delta Variant,Intergenic,None
+3,T,-,Delta Variant,Intergenic,None
+4,A,-,Delta Variant,Intergenic,None
+5,A,-,Delta Variant,Intergenic,None
+6,A,-,Delta Variant,Intergenic,None
+7,G,-,Delta Variant,Intergenic,None
+8,G,-,Delta Variant,Intergenic,None
+9,T,-,Delta Variant,Intergenic,None
+10,T,-,Delta Variant,Intergenic,None
+11,T,-,Delta Variant,Intergenic,None
+12,A,-,Delta Variant,Intergenic,None
+13,T,-,Delta Variant,Intergenic,None
+14,A,-,Delta Variant,Intergenic,None
+16,C,-,Delta Variant,Intergenic,None
+17,T,-,Delta Variant,Intergenic,None
+18,T,-,Delta Variant,Intergenic,None
+19,C,-,Delta Variant,Intergenic,None
+20,C,-,Delta Variant,Intergenic,None
+21,C,-,Delta Variant,Intergenic,None
+23,G,-,Delta Variant,Intergenic,None
+24,G,-,Delta Variant,Intergenic,None
+25,T,-,Delta Variant,Intergenic,None
+29,A,-,Delta Variant,Intergenic,None
+30,A,-,Delta Variant,Intergenic,None
+31,A,-,Delta Variant,Intergenic,None
+33,C,-,Delta Variant,Intergenic,None
+210,G,T,Delta Variant,Intergenic,None
+241,C,T,Delta Variant,Intergenic,None
+3037,C,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+4181,G,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+5239,C,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+5514,T,C,Delta Variant,ORF1ab,ORF1ab polyprotein
+6402,C,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+7124,C,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+8986,C,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+9053,G,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+10029,C,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+11201,A,G,Delta Variant,ORF1ab,ORF1ab polyprotein
+11332,A,G,Delta Variant,ORF1ab,ORF1ab polyprotein
+14408,C,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+15451,G,A,Delta Variant,ORF1ab,ORF1ab polyprotein
+16466,C,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+19220,C,T,Delta Variant,ORF1ab,ORF1ab polyprotein
+21618,C,G,Delta Variant,S,surface glycoprotein
+21846,C,Y,Delta Variant,S,surface glycoprotein
+21987,G,A,Delta Variant,S,surface glycoprotein
+22917,T,G,Delta Variant,S,surface glycoprotein
+22995,C,A,Delta Variant,S,surface glycoprotein
+23403,A,G,Delta Variant,S,surface glycoprotein
+23604,C,G,Delta Variant,S,surface glycoprotein
+24410,G,A,Delta Variant,S,surface glycoprotein
+25469,C,T,Delta Variant,ORF3a,ORF3a protein
+26767,T,Y,Delta Variant,M,membrane glycoprotein
+27638,T,C,Delta Variant,ORF7a,ORF7a protein
+27874,C,T,Delta Variant,ORF7b,ORF7b
+28253,C,A,Delta Variant,ORF8,ORF8 protein
+28461,A,G,Delta Variant,N,nucleocapsid phosphoprotein
+28881,G,T,Delta Variant,N,nucleocapsid phosphoprotein
+28916,G,T,Delta Variant,N,nucleocapsid phosphoprotein
+29402,G,T,Delta Variant,N,nucleocapsid phosphoprotein
+29742,G,T,Delta Variant,Intergenic,None
+29864,G,-,Delta Variant,Intergenic,None
+29865,A,-,Delta Variant,Intergenic,None
+29866,A,-,Delta Variant,Intergenic,None
+29867,T,-,Delta Variant,Intergenic,None
+29868,G,-,Delta Variant,Intergenic,None
+29869,A,-,Delta Variant,Intergenic,None
+29870,C,-,Delta Variant,Intergenic,None
+29871,A,-,Delta Variant,Intergenic,None
+29872,A,-,Delta Variant,Intergenic,None
+29873,A,-,Delta Variant,Intergenic,None
+29874,A,-,Delta Variant,Intergenic,None
+29875,A,-,Delta Variant,Intergenic,None
+29876,A,-,Delta Variant,Intergenic,None
+29877,A,-,Delta Variant,Intergenic,None
+29878,A,-,Delta Variant,Intergenic,None
+29879,A,-,Delta Variant,Intergenic,None
+29880,A,-,Delta Variant,Intergenic,None
+29881,A,-,Delta Variant,Intergenic,None
+29882,A,-,Delta Variant,Intergenic,None
+29883,A,-,Delta Variant,Intergenic,None
+29884,A,-,Delta Variant,Intergenic,None
+29885,A,-,Delta Variant,Intergenic,None
+29886,A,-,Delta Variant,Intergenic,None
+29887,A,-,Delta Variant,Intergenic,None
+29888,A,-,Delta Variant,Intergenic,None
+29889,A,-,Delta Variant,Intergenic,None
+29890,A,-,Delta Variant,Intergenic,None
+29891,A,-,Delta Variant,Intergenic,None
+29892,A,-,Delta Variant,Intergenic,None
+29893,A,-,Delta Variant,Intergenic,None
+29894,A,-,Delta Variant,Intergenic,None
+29895,A,-,Delta Variant,Intergenic,None
+29896,A,-,Delta Variant,Intergenic,None
+29897,A,-,Delta Variant,Intergenic,None
+29898,A,-,Delta Variant,Intergenic,None
+29899,A,-,Delta Variant,Intergenic,None
+29900,A,-,Delta Variant,Intergenic,None
+29901,A,-,Delta Variant,Intergenic,None
+29902,A,-,Delta Variant,Intergenic,None
+29903,A,-,Delta Variant,Intergenic,None

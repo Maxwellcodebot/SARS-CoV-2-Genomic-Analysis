@@ -1,0 +1,127 @@
+Position,Reference,Variant,Variant_Strain,Gene,Product
+2,T,-,Omicron XBB,Intergenic,None
+3,T,-,Omicron XBB,Intergenic,None
+4,A,-,Omicron XBB,Intergenic,None
+5,A,-,Omicron XBB,Intergenic,None
+6,A,-,Omicron XBB,Intergenic,None
+7,G,-,Omicron XBB,Intergenic,None
+8,G,-,Omicron XBB,Intergenic,None
+9,T,-,Omicron XBB,Intergenic,None
+10,T,-,Omicron XBB,Intergenic,None
+11,T,-,Omicron XBB,Intergenic,None
+12,A,-,Omicron XBB,Intergenic,None
+13,T,-,Omicron XBB,Intergenic,None
+14,A,-,Omicron XBB,Intergenic,None
+17,T,-,Omicron XBB,Intergenic,None
+18,T,-,Omicron XBB,Intergenic,None
+19,C,-,Omicron XBB,Intergenic,None
+20,C,-,Omicron XBB,Intergenic,None
+21,C,-,Omicron XBB,Intergenic,None
+23,G,-,Omicron XBB,Intergenic,None
+24,G,-,Omicron XBB,Intergenic,None
+25,T,-,Omicron XBB,Intergenic,None
+27,A,-,Omicron XBB,Intergenic,None
+29,A,-,Omicron XBB,Intergenic,None
+30,A,-,Omicron XBB,Intergenic,None
+31,A,-,Omicron XBB,Intergenic,None
+33,C,-,Omicron XBB,Intergenic,None
+37,C,-,Omicron XBB,Intergenic,None
+38,A,-,Omicron XBB,Intergenic,None
+39,A,-,Omicron XBB,Intergenic,None
+40,C,-,Omicron XBB,Intergenic,None
+241,C,T,Omicron XBB,Intergenic,None
+733,T,C,Omicron XBB,ORF1ab,ORF1ab polyprotein
+2749,C,T,Omicron XBB,ORF1ab,ORF1ab polyprotein
+3004,G,A,Omicron XBB,ORF1ab,ORF1ab polyprotein
+3037,C,T,Omicron XBB,ORF1ab,ORF1ab polyprotein
+3828,C,T,Omicron XBB,ORF1ab,ORF1ab polyprotein
+5648,A,C,Omicron XBB,ORF1ab,ORF1ab polyprotein
+6319,A,G,Omicron XBB,ORF1ab,ORF1ab polyprotein
+6613,A,G,Omicron XBB,ORF1ab,ORF1ab polyprotein
+11288,T,-,Omicron XBB,ORF1ab,ORF1ab polyprotein
+11289,C,-,Omicron XBB,ORF1ab,ORF1ab polyprotein
+11290,T,-,Omicron XBB,ORF1ab,ORF1ab polyprotein
+11291,G,-,Omicron XBB,ORF1ab,ORF1ab polyprotein
+11292,G,-,Omicron XBB,ORF1ab,ORF1ab polyprotein
+11293,T,-,Omicron XBB,ORF1ab,ORF1ab polyprotein
+11294,T,-,Omicron XBB,ORF1ab,ORF1ab polyprotein
+11295,T,-,Omicron XBB,ORF1ab,ORF1ab polyprotein
+11296,T,-,Omicron XBB,ORF1ab,ORF1ab polyprotein
+12778,C,T,Omicron XBB,ORF1ab,ORF1ab polyprotein
+13860,C,T,Omicron XBB,ORF1ab,ORF1ab polyprotein
+14408,C,T,Omicron XBB,ORF1ab,ORF1ab polyprotein
+17259,G,T,Omicron XBB,ORF1ab,ORF1ab polyprotein
+21614,C,T,Omicron XBB,S,surface glycoprotein
+21621,C,A,Omicron XBB,S,surface glycoprotein
+21638,C,T,Omicron XBB,S,surface glycoprotein
+21974,G,T,Omicron XBB,S,surface glycoprotein
+22132,G,T,Omicron XBB,S,surface glycoprotein
+22450,C,T,Omicron XBB,S,surface glycoprotein
+22812,A,C,Omicron XBB,S,surface glycoprotein
+23012,G,A,Omicron XBB,S,surface glycoprotein
+23063,A,T,Omicron XBB,S,surface glycoprotein
+23403,A,G,Omicron XBB,S,surface glycoprotein
+23525,C,T,Omicron XBB,S,surface glycoprotein
+23599,T,G,Omicron XBB,S,surface glycoprotein
+24642,C,T,Omicron XBB,S,surface glycoprotein
+25088,G,T,Omicron XBB,S,surface glycoprotein
+26149,T,C,Omicron XBB,ORF3a,ORF3a protein
+26388,C,T,Omicron XBB,E,envelope protein
+26653,G,A,Omicron XBB,M,membrane glycoprotein
+28167,G,A,Omicron XBB,ORF8,ORF8 protein
+28270,-,A,Omicron XBB,Intergenic,None
+28271,-,A,Omicron XBB,Intergenic,None
+28272,-,A,Omicron XBB,Intergenic,None
+28273,-,C,Omicron XBB,N,nucleocapsid phosphoprotein
+28516,C,G,Omicron XBB,N,nucleocapsid phosphoprotein
+28881,A,T,Omicron XBB,N,nucleocapsid phosphoprotein
+28882,G,C,Omicron XBB,N,nucleocapsid phosphoprotein
+28885,G,A,Omicron XBB,N,nucleocapsid phosphoprotein
+28886,G,A,Omicron XBB,N,nucleocapsid phosphoprotein
+28887,G,C,Omicron XBB,N,nucleocapsid phosphoprotein
+29216,G,A,Omicron XBB,N,nucleocapsid phosphoprotein
+29531,G,A,Omicron XBB,N,nucleocapsid phosphoprotein
+29631,C,T,Omicron XBB,ORF10,ORF10 protein
+29838,T,A,Omicron XBB,Intergenic,None
+29866,G,-,Omicron XBB,Intergenic,None
+29867,A,-,Omicron XBB,Intergenic,None
+29868,G,-,Omicron XBB,Intergenic,None
+29869,A,-,Omicron XBB,Intergenic,None
+29870,A,-,Omicron XBB,Intergenic,None
+29871,T,-,Omicron XBB,Intergenic,None
+29872,G,-,Omicron XBB,Intergenic,None
+29873,A,-,Omicron XBB,Intergenic,None
+29874,C,-,Omicron XBB,Intergenic,None
+29875,A,-,Omicron XBB,Intergenic,None
+29876,A,-,Omicron XBB,Intergenic,None
+29877,A,-,Omicron XBB,Intergenic,None
+29878,A,-,Omicron XBB,Intergenic,None
+29879,A,-,Omicron XBB,Intergenic,None
+29880,A,-,Omicron XBB,Intergenic,None
+29881,A,-,Omicron XBB,Intergenic,None
+29882,A,-,Omicron XBB,Intergenic,None
+29883,A,-,Omicron XBB,Intergenic,None
+29884,A,-,Omicron XBB,Intergenic,None
+29885,A,-,Omicron XBB,Intergenic,None
+29886,A,-,Omicron XBB,Intergenic,None
+29887,A,-,Omicron XBB,Intergenic,None
+29888,A,-,Omicron XBB,Intergenic,None
+29889,A,-,Omicron XBB,Intergenic,None
+29890,A,-,Omicron XBB,Intergenic,None
+29891,A,-,Omicron XBB,Intergenic,None
+29892,A,-,Omicron XBB,Intergenic,None
+29893,A,-,Omicron XBB,Intergenic,None
+29894,A,-,Omicron XBB,Intergenic,None
+29895,A,-,Omicron XBB,Intergenic,None
+29896,A,-,Omicron XBB,Intergenic,None
+29897,A,-,Omicron XBB,Intergenic,None
+29898,A,-,Omicron XBB,Intergenic,None
+29899,A,-,Omicron XBB,Intergenic,None
+29900,A,-,Omicron XBB,Intergenic,None
+29901,A,-,Omicron XBB,Intergenic,None
+29902,A,-,Omicron XBB,Intergenic,None
+29903,A,-,Omicron XBB,Intergenic,None
+29904,A,-,Omicron XBB,Intergenic,None
+29905,A,-,Omicron XBB,Intergenic,None
+29906,A,-,Omicron XBB,Intergenic,None
+29907,A,-,Omicron XBB,Intergenic,None

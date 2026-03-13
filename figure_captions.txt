@@ -1,0 +1,8 @@
+
+Figure 1: Bar chart comparing GC content percentages across five SARS-CoV-2 variants (Wuhan-Hu-1 reference, Alpha, Delta, Omicron BA.1, and Omicron XBB). Values range from 37.953% to 37.989%.
+
+Figure 2: Bar chart showing the total number of point mutations identified in each variant compared to the Wuhan-Hu-1 reference genome.
+
+Figure 3: Scatter plot showing the distribution of mutations across the SARS-CoV-2 genome for each variant. Gray shaded regions indicate gene coding sequences.
+
+Figure 4: Heatmap showing mutation density across the SARS-CoV-2 genome (binned in 500bp intervals). Darker red colors indicate higher mutation frequency.

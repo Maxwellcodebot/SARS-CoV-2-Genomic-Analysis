@@ -1,0 +1,13 @@
+Gene,Product,Start,End,Length
+ORF1ab,ORF1ab polyprotein,265,21555,21290
+ORF1ab,ORF1a polyprotein,265,13483,13218
+S,surface glycoprotein,21562,25384,3822
+ORF3a,ORF3a protein,25392,26220,828
+E,envelope protein,26244,26472,228
+M,membrane glycoprotein,26522,27191,669
+ORF6,ORF6 protein,27201,27387,186
+ORF7a,ORF7a protein,27393,27759,366
+ORF7b,ORF7b,27755,27887,132
+ORF8,ORF8 protein,27893,28259,366
+N,nucleocapsid phosphoprotein,28273,29533,1260
+ORF10,ORF10 protein,29557,29674,117

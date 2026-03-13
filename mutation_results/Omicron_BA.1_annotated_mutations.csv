@@ -1,0 +1,168 @@
+Position,Reference,Variant,Variant_Strain,Gene,Product
+2,T,-,Omicron BA.1,Intergenic,None
+3,T,-,Omicron BA.1,Intergenic,None
+4,A,-,Omicron BA.1,Intergenic,None
+5,A,-,Omicron BA.1,Intergenic,None
+6,A,-,Omicron BA.1,Intergenic,None
+8,G,-,Omicron BA.1,Intergenic,None
+9,T,-,Omicron BA.1,Intergenic,None
+10,T,-,Omicron BA.1,Intergenic,None
+11,T,-,Omicron BA.1,Intergenic,None
+14,A,-,Omicron BA.1,Intergenic,None
+16,C,-,Omicron BA.1,Intergenic,None
+18,T,-,Omicron BA.1,Intergenic,None
+19,C,-,Omicron BA.1,Intergenic,None
+20,C,-,Omicron BA.1,Intergenic,None
+21,C,-,Omicron BA.1,Intergenic,None
+22,A,-,Omicron BA.1,Intergenic,None
+24,G,-,Omicron BA.1,Intergenic,None
+26,A,-,Omicron BA.1,Intergenic,None
+27,A,-,Omicron BA.1,Intergenic,None
+28,C,-,Omicron BA.1,Intergenic,None
+29,A,-,Omicron BA.1,Intergenic,None
+30,A,-,Omicron BA.1,Intergenic,None
+31,A,-,Omicron BA.1,Intergenic,None
+32,C,-,Omicron BA.1,Intergenic,None
+33,C,-,Omicron BA.1,Intergenic,None
+34,A,-,Omicron BA.1,Intergenic,None
+35,A,-,Omicron BA.1,Intergenic,None
+36,C,-,Omicron BA.1,Intergenic,None
+37,C,-,Omicron BA.1,Intergenic,None
+38,A,-,Omicron BA.1,Intergenic,None
+39,A,-,Omicron BA.1,Intergenic,None
+40,C,-,Omicron BA.1,Intergenic,None
+42,T,-,Omicron BA.1,Intergenic,None
+43,T,-,Omicron BA.1,Intergenic,None
+45,G,-,Omicron BA.1,Intergenic,None
+46,A,-,Omicron BA.1,Intergenic,None
+50,C,-,Omicron BA.1,Intergenic,None
+51,T,-,Omicron BA.1,Intergenic,None
+52,T,-,Omicron BA.1,Intergenic,None
+53,G,-,Omicron BA.1,Intergenic,None
+54,T,-,Omicron BA.1,Intergenic,None
+56,G,-,Omicron BA.1,Intergenic,None
+58,T,-,Omicron BA.1,Intergenic,None
+59,C,-,Omicron BA.1,Intergenic,None
+60,T,-,Omicron BA.1,Intergenic,None
+61,G,-,Omicron BA.1,Intergenic,None
+62,T,-,Omicron BA.1,Intergenic,None
+63,T,-,Omicron BA.1,Intergenic,None
+64,C,-,Omicron BA.1,Intergenic,None
+65,T,-,Omicron BA.1,Intergenic,None
+66,C,-,Omicron BA.1,Intergenic,None
+67,T,-,Omicron BA.1,Intergenic,None
+69,A,-,Omicron BA.1,Intergenic,None
+70,A,-,Omicron BA.1,Intergenic,None
+174,G,T,Omicron BA.1,Intergenic,None
+241,C,T,Omicron BA.1,Intergenic,None
+1059,C,T,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+3037,C,T,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+4213,T,C,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+5230,G,T,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+10323,A,G,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11288,T,-,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11289,C,-,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11290,T,-,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11291,G,-,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11292,G,-,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11293,T,-,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11294,T,-,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11295,T,-,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11296,T,-,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11812,C,A,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+11873,G,A,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+14408,C,T,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+14774,A,G,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+15925,C,T,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+17970,T,C,Omicron BA.1,ORF1ab,ORF1ab polyprotein
+21641,G,T,Omicron BA.1,S,surface glycoprotein
+21801,A,C,Omicron BA.1,S,surface glycoprotein
+22206,A,G,Omicron BA.1,S,surface glycoprotein
+22287,T,-,Omicron BA.1,S,surface glycoprotein
+22288,T,-,Omicron BA.1,S,surface glycoprotein
+22289,G,-,Omicron BA.1,S,surface glycoprotein
+22290,C,-,Omicron BA.1,S,surface glycoprotein
+22291,T,-,Omicron BA.1,S,surface glycoprotein
+22292,T,-,Omicron BA.1,S,surface glycoprotein
+22293,T,-,Omicron BA.1,S,surface glycoprotein
+22295,C,-,Omicron BA.1,S,surface glycoprotein
+22296,A,-,Omicron BA.1,S,surface glycoprotein
+22813,G,T,Omicron BA.1,S,surface glycoprotein
+23012,G,A,Omicron BA.1,S,surface glycoprotein
+23063,A,T,Omicron BA.1,S,surface glycoprotein
+23403,A,G,Omicron BA.1,S,surface glycoprotein
+23664,C,T,Omicron BA.1,S,surface glycoprotein
+23764,A,T,Omicron BA.1,S,surface glycoprotein
+25563,G,T,Omicron BA.1,ORF3a,ORF3a protein
+25904,C,T,Omicron BA.1,ORF3a,ORF3a protein
+26456,C,T,Omicron BA.1,E,envelope protein
+28253,C,T,Omicron BA.1,ORF8,ORF8 protein
+28642,T,C,Omicron BA.1,N,nucleocapsid phosphoprotein
+28887,C,T,Omicron BA.1,N,nucleocapsid phosphoprotein
+29837,C,-,Omicron BA.1,Intergenic,None
+29838,C,-,Omicron BA.1,Intergenic,None
+29839,A,-,Omicron BA.1,Intergenic,None
+29840,T,-,Omicron BA.1,Intergenic,None
+29841,G,-,Omicron BA.1,Intergenic,None
+29842,T,-,Omicron BA.1,Intergenic,None
+29843,G,-,Omicron BA.1,Intergenic,None
+29844,A,-,Omicron BA.1,Intergenic,None
+29845,T,-,Omicron BA.1,Intergenic,None
+29846,T,-,Omicron BA.1,Intergenic,None
+29847,T,-,Omicron BA.1,Intergenic,None
+29848,T,-,Omicron BA.1,Intergenic,None
+29849,A,-,Omicron BA.1,Intergenic,None
+29850,A,-,Omicron BA.1,Intergenic,None
+29851,T,-,Omicron BA.1,Intergenic,None
+29852,A,-,Omicron BA.1,Intergenic,None
+29853,G,-,Omicron BA.1,Intergenic,None
+29854,C,-,Omicron BA.1,Intergenic,None
+29855,T,-,Omicron BA.1,Intergenic,None
+29856,T,-,Omicron BA.1,Intergenic,None
+29857,C,-,Omicron BA.1,Intergenic,None
+29858,T,-,Omicron BA.1,Intergenic,None
+29859,T,-,Omicron BA.1,Intergenic,None
+29860,A,-,Omicron BA.1,Intergenic,None
+29861,G,-,Omicron BA.1,Intergenic,None
+29862,G,-,Omicron BA.1,Intergenic,None
+29863,A,-,Omicron BA.1,Intergenic,None
+29864,G,-,Omicron BA.1,Intergenic,None
+29865,A,-,Omicron BA.1,Intergenic,None
+29866,A,-,Omicron BA.1,Intergenic,None
+29867,T,-,Omicron BA.1,Intergenic,None
+29868,G,-,Omicron BA.1,Intergenic,None
+29869,A,-,Omicron BA.1,Intergenic,None
+29870,C,-,Omicron BA.1,Intergenic,None
+29871,A,-,Omicron BA.1,Intergenic,None
+29872,A,-,Omicron BA.1,Intergenic,None
+29873,A,-,Omicron BA.1,Intergenic,None
+29874,A,-,Omicron BA.1,Intergenic,None
+29875,A,-,Omicron BA.1,Intergenic,None
+29876,A,-,Omicron BA.1,Intergenic,None
+29877,A,-,Omicron BA.1,Intergenic,None
+29878,A,-,Omicron BA.1,Intergenic,None
+29879,A,-,Omicron BA.1,Intergenic,None
+29880,A,-,Omicron BA.1,Intergenic,None
+29881,A,-,Omicron BA.1,Intergenic,None
+29882,A,-,Omicron BA.1,Intergenic,None
+29883,A,-,Omicron BA.1,Intergenic,None
+29884,A,-,Omicron BA.1,Intergenic,None
+29885,A,-,Omicron BA.1,Intergenic,None
+29886,A,-,Omicron BA.1,Intergenic,None
+29887,A,-,Omicron BA.1,Intergenic,None
+29888,A,-,Omicron BA.1,Intergenic,None
+29889,A,-,Omicron BA.1,Intergenic,None
+29890,A,-,Omicron BA.1,Intergenic,None
+29891,A,-,Omicron BA.1,Intergenic,None
+29892,A,-,Omicron BA.1,Intergenic,None
+29893,A,-,Omicron BA.1,Intergenic,None
+29894,A,-,Omicron BA.1,Intergenic,None
+29895,A,-,Omicron BA.1,Intergenic,None
+29896,A,-,Omicron BA.1,Intergenic,None
+29897,A,-,Omicron BA.1,Intergenic,None
+29898,A,-,Omicron BA.1,Intergenic,None
+29899,A,-,Omicron BA.1,Intergenic,None
+29900,A,-,Omicron BA.1,Intergenic,None
+29901,A,-,Omicron BA.1,Intergenic,None
+29902,A,-,Omicron BA.1,Intergenic,None
+29903,A,-,Omicron BA.1,Intergenic,None
