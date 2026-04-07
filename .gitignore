@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+env/
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Output files (optional - remove if you want to share results)
+*.png
+*.csv
+mutation_results/
+
+# OS files
+.DS_Store
+Thumbs.db
