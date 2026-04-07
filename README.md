@@ -1,5 +1,3 @@
-
-
 # 🦠 SARS-CoV-2 Genomic Analysis Pipeline
 
 A complete bioinformatics pipeline for analyzing SARS-CoV-2 genome sequences, comparing variants (Alpha, Delta, Omicron BA.1, Omicron XBB), and visualizing evolutionary patterns.
@@ -11,296 +9,479 @@ A complete bioinformatics pipeline for analyzing SARS-CoV-2 genome sequences, co
 ---
 
 ## 📋 Table of Contents
+
 1. [Project Overview](#-project-overview)
-2. [Key Findings](#-key-findings)
-3. [Requirements](#-requirements)
-4. [How to Run](#-how-to-run)
-5. [Repository Structure](#-repository-structure)
-6. [Output Files Explained](#-output-files-explained)
-7. [Biological Interpretation](#-biological-interpretation)
-8. [For Beginners: Understanding the Code](#-for-beginners-understanding-the-code)
-9. [Future Improvements](#-future-improvements)
-10. [References](#-references)
-11. [Author](#-author)
-12. [License](#-license)
-13. [Acknowledgments](#-acknowledgments)
-14. [Contact](#-contact)
-15. [Quick Start](#-quick-start-one-liner)
+2. [Requirements](#-requirements)
+3. [Installation](#-installation)
+4. [File Structure](#-file-structure)
+5. [How to Run](#-how-to-run)
+6. [Expected Output](#-expected-output)
+7. [Output Files Explained](#-output-files-explained)
+8. [Figures Generated](#-figures-generated)
+9. [Biological Interpretation](#-biological-interpretation)
+10. [Troubleshooting](#-troubleshooting)
+11. [For Beginners: Understanding the Code](#-for-beginners-understanding-the-code)
+12. [Future Improvements](#-future-improvements)
+13. [References](#-references)
+14. [Author](#-author)
+15. [License](#-license)
 
 ---
 
 ## 📊 Project Overview
 
-This project analyzes **5 SARS-CoV-2 genomes** (Wuhan-Hu-1 reference, Alpha, Delta, Omicron BA.1, and Omicron XBB) to identify:
+This pipeline analyzes **5 SARS-CoV-2 genomes** (Wuhan-Hu-1 reference, Alpha, Delta, Omicron BA.1, and Omicron XBB) to identify:
 
-- 🧬 **GC Content variation** across variants  
-- 🔬 **Point mutations** relative to the reference  
-- 🗺️ **Mutation hotspots** in the genome  
-- 📈 **Evolutionary patterns** among variants  
+- 🧬 **GC content variation** across variants (genome stability indicator)
+- 🔬 **Point mutations** relative to the reference strain
+- 🗺️ **Mutation hotspots** across the genome
+- 📈 **Evolutionary patterns** among emerging variants
 
-The pipeline generates **4 publication-quality figures** and comprehensive CSV reports automatically.
-
----
-
-## 🔬 Key Findings
-
-| Variant | GC Content | Mutations | Notable Finding |
-|---------|------------|-----------|----------------|
-| **Reference (Wuhan-Hu-1)** | 37.973% | - | Original strain |
-| **Alpha Variant** | 37.982% | 84 | Lowest mutation count |
-| **Delta Variant** | 37.964% | 102 | Contains 40 ambiguous bases (N's) |
-| **Omicron BA.1** | **37.989%** | **167** | **Highest GC% and mutations** |
-| **Omicron XBB** | 37.953% | 126 | Lowest GC% among Omicron lineage |
-
-### 🎯 Major Discovery
-A significant **mutation hotspot** was identified at **29500-30000 bp**, corresponding to the **spike protein gene and 3'UTR**. Omicron variants show the highest mutation density in this region, correlating with increased transmissibility and immune evasion.
+The pipeline generates **up to 4 publication-quality figures** and comprehensive CSV reports automatically.
 
 ---
 
 ## 🛠️ Requirements
 
-```bash
+### Software
+- **Python 3.8 - 3.11** (Biopython 1.81 does not support Python 3.12+)
+- **Operating System**: Windows, macOS, or Linux
+
+### Python Packages
+```
 biopython==1.81
 pandas==2.0.3
 numpy==1.24.3
 matplotlib==3.7.2
 seaborn==0.12.2
 tabulate==0.9.0
+```
 
-Install with:
-
-pip install -r requirements.txt
-
+### Input Files (Required)
+- 5 FASTA sequence files (exact names as shown below)
+- Optional: `sequence.gb` GenBank annotation file for gene-level analysis
 
 ---
 
-🚀 How to Run
+## 📦 Installation
 
-1. Clone the repository
-
+### Step 1: Clone the repository
+```bash
 git clone https://github.com/Maxwellcodebot/SARS-CoV-2-Genomic-Analysis.git
 cd SARS-CoV-2-Genomic-Analysis
+```
 
-2. Install dependencies
+### Step 2: Create a virtual environment (recommended)
+```bash
+# macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
 
+# Windows
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Step 3: Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-3. Run the analysis
+Or install manually:
+```bash
+pip install biopython pandas numpy matplotlib seaborn tabulate
+```
 
-python sars_cov2_analysis.py
-
-The script will automatically:
-
-✅ Read all FASTA files
-
-✅ Calculate GC content for each variant
-
-✅ Identify mutations compared to reference
-
-✅ Generate 4 figures
-
-✅ Save all results to CSV files
-
-
+### Step 4: Verify input files
+Ensure all required FASTA files are in the root directory (see [File Structure](#-file-structure)).
 
 ---
 
-📁 Repository Structure
+## 📁 File Structure
 
+```
 SARS-CoV-2-Genomic-Analysis/
 │
-├── sars_cov2_analysis.py               # Main analysis script (beginner-friendly)
-├── README.md                           # This file
-├── requirements.txt                    # Python package dependencies
+├── sars_cov2_analysis.py                    # Main analysis script
+├── README.md                                # This file
+├── requirements.txt                         # Python dependencies
 │
-├── COVID_Sequence_Reference.fasta      # Wuhan-Hu-1 reference genome
-├── COVID_Sequence_Alpha_Variant.fasta  # Alpha variant
-├── COVID_Sequence_Delta_Variant.fasta  # Delta variant
-├── Omicron_BA.1_COVID_Variant.fasta    # Omicron BA.1
-├── Omicron_XBB_COVID_Variant.fasta     # Omicron XBB
-├── sequence.gb                          # GenBank annotation file
+├── INPUT FILES (required):
+├── COVID_Sequence(Reference).fasta          # Wuhan-Hu-1 reference genome
+├── COVID_Sequence(Alpha Variant).fasta      # Alpha variant (B.1.1.7)
+├── COVID_delta Variant.fasta                # Delta variant (B.1.617.2)
+├── Omicron_(BA.1)COVID_Variant.fasta        # Omicron BA.1 (B.1.1.529)
+├── Omicron_(XBB)_COVID_Variant.fasta        # Omicron XBB recombinant
 │
-├── Complete_GC_Report.csv               # GC content summary table
-├── gc_content_bar_chart.png             # Figure 1: GC comparison
-├── mutation_count_chart.png             # Figure 2: Mutation counts
-├── mutation_distribution.png            # Figure 3: Mutation positions
-├── mutation_heatmap.png                 # Figure 4: Mutation density heatmap
-├── figure_captions.txt                  # All figure captions
+├── OPTIONAL INPUT:
+├── sequence.gb                              # GenBank annotation file
 │
-└── mutation_results/                     # Folder with mutation data
-    ├── Alpha_Variant_mutations.csv
-    ├── Delta_Variant_mutations.csv
-    ├── Omicron_BA.1_mutations.csv
-    ├── Omicron_XBB_mutations.csv
-    ├── mutation_summary.csv
-    └── *_annotated_mutations.csv        # Mutations with gene info (if available)
-
+├── OUTPUT FILES (generated by script):
+├── Complete_GC_Report.csv                   # GC content summary
+├── gc_content_bar_chart.png                 # Figure 1
+├── mutation_count_chart.png                 # Figure 2
+│
+├── mutation_results/                        # Created automatically
+│   ├── mutation_summary.csv                 # Mutation counts per variant
+│   ├── Alpha_Variant_mutations.csv          # Detailed mutations (Alpha)
+│   ├── Delta_Variant_mutations.csv          # Detailed mutations (Delta)
+│   ├── Omicron_BA.1_mutations.csv           # Detailed mutations (BA.1)
+│   └── Omicron_XBB_mutations.csv            # Detailed mutations (XBB)
+│
+└── IF sequence.gb PROVIDED:
+    ├── gene_annotations.csv                 # Gene position data
+    ├── mutation_distribution.png            # Figure 3
+    ├── mutation_heatmap.png                 # Figure 4
+    └── figure_captions.txt                  # All figure captions
+```
 
 ---
 
-📊 Output Files Explained
+## 🚀 How to Run
 
-CSV Files
+### Basic execution
+```bash
+python sars_cov2_analysis.py
+```
 
-File	Description
+### Expected runtime
+- With all 5 FASTA files: ~10-30 seconds
+- With optional GenBank file: ~30-60 seconds
 
-Complete_GC_Report.csv	GC content for all variants with statistics
-mutation_results/mutation_summary.csv	Mutation counts per variant
-mutation_results/*_mutations.csv	Individual mutation lists (position, reference, variant)
-mutation_results/*_annotated_mutations.csv	Mutations with gene info (if available)
-gene_annotations.csv	Gene positions from GenBank file
-
-
-Figures
-
-Figure	File	Description
-
-Figure 1	gc_content_bar_chart.png	Bar chart comparing GC% across variants
-Figure 2	mutation_count_chart.png	Bar chart showing mutation counts
-Figure 3	mutation_distribution.png	Scatter plot of mutation positions
-Figure 4	mutation_heatmap.png	Heatmap of mutation density (500bp bins)
-
-
+### What the script does automatically:
+1. ✅ Reads all 5 FASTA files
+2. ✅ Calculates GC content for each variant
+3. ✅ Identifies mutations compared to reference
+4. ✅ Generates CSV reports
+5. ✅ Creates figures (2 mandatory, 2 optional)
+6. ✅ Saves all results to organized folders
 
 ---
 
-🧪 Biological Interpretation
+## 📊 Expected Output
 
-1. GC Content (37.95% - 37.99%)
+### GC Content Results (example - actual values vary by sequence file)
 
-Omicron BA.1 has the highest GC% (37.989%) → potentially more stable genome
+| Variant | GC Content (%) | Genome Length | N Count |
+|---------|---------------|---------------|---------|
+| Reference (Wuhan-Hu-1) | ~37.97 | 29,903 | 0 |
+| Alpha Variant | ~37.98 | 29,903 | 0 |
+| Delta Variant | ~37.96 | 29,903 | ~40 |
+| Omicron BA.1 | ~37.99 | 29,903 | 0 |
+| Omicron XBB | ~37.95 | 29,903 | 0 |
 
-Omicron XBB has the lowest GC% (37.953%) → divergent evolution within Omicron lineage
+> **Note:** Exact values depend on your specific sequence files. Ranges are ~37.95-37.99%.
 
-Very narrow range shows evolutionary constraint on base composition
+### Mutation Count Results (example)
 
-
-
-2. Mutation Burden
-
-Alpha: 84 mutations (lowest)
-
-Delta: 102 mutations
-
-Omicron XBB: 126 mutations
-
-Omicron BA.1: 167 mutations (highest)
-
-Pattern: Mutation count increased over time → accelerated evolution in later variants
-
-
-
-3. Mutation Hotspot (29500-30000 bp)
-
-Located in spike protein gene / 3'UTR
-
-Omicron variants show highest density here → important for transmission and immune evasion
-
-
-
-4. Quality Control
-
-Delta variant contains 40 'N' bases → possible sequencing quality issue
-
-
-
-
+| Variant | Mutation Count | Mutation Rate (per 100 bases) |
+|---------|---------------|-------------------------------|
+| Alpha Variant | ~80-90 | ~0.27-0.30 |
+| Delta Variant | ~100-110 | ~0.33-0.37 |
+| Omicron BA.1 | ~160-170 | ~0.53-0.57 |
+| Omicron XBB | ~120-130 | ~0.40-0.43 |
 
 ---
 
-👨‍💻 For Beginners: Understanding the Code
+## 📄 Output Files Explained
 
-# GC content = how many G and C letters in the DNA
-# Higher GC = more stable genome
+### CSV Files
 
+| File | Description | Columns |
+|------|-------------|---------|
+| `Complete_GC_Report.csv` | GC content for all variants | Strain, GC_Content_%, Genome_Length, A_Count, T_Count, G_Count, C_Count, N_Count, Valid_Bases, Diff_from_Ref_% |
+| `mutation_results/mutation_summary.csv` | Mutation counts per variant | Strain, Mutation_Count, Mutation_Rate |
+| `mutation_results/*_mutations.csv` | Individual mutation lists | Position, Reference, Variant, Variant_Strain |
+| `mutation_results/*_annotated_mutations.csv` | Mutations with gene info | Position, Reference, Variant, Gene, Product (if GenBank provided) |
+| `gene_annotations.csv` | Gene positions from GenBank | Gene, Product, Start, End, Length |
+
+---
+
+## 📈 Figures Generated
+
+| Figure | File | Description | Requires GenBank? |
+|--------|------|-------------|-------------------|
+| **Figure 1** | `gc_content_bar_chart.png` | Bar chart comparing GC% across all variants | No |
+| **Figure 2** | `mutation_count_chart.png` | Bar chart showing total mutation counts | No |
+| **Figure 3** | `mutation_distribution.png` | Scatter plot of mutation positions along genome | Yes |
+| **Figure 4** | `mutation_heatmap.png` | Heatmap of mutation density (500bp bins) | Yes |
+
+### Figure Descriptions
+
+**Figure 1 - GC Content Comparison**
+- Displays GC percentage for each strain
+- Includes reference line for comparison
+- Annotates exact values on each bar
+
+**Figure 2 - Mutation Burden**
+- Shows total mutations per variant
+- Higher bars indicate more evolutionary divergence
+
+**Figure 3 - Mutation Distribution**
+- Each dot represents one mutation
+- X-axis: genomic position (bp)
+- Y-axis: different variants (offset for visibility)
+- Gray boxes: gene locations
+
+**Figure 4 - Mutation Density Heatmap**
+- Genome divided into 500bp bins
+- Color intensity = number of mutations in that bin
+- Darker red = mutation hotspot
+
+---
+
+## 🧪 Biological Interpretation
+
+### 1. GC Content (typically 37.95% - 37.99%)
+
+- **Narrow range** suggests strong evolutionary constraint on base composition
+- **Higher GC%** (e.g., Omicron BA.1) may indicate greater genome stability
+- **Lower GC%** (e.g., Omicron XBB) suggests divergent evolution within lineage
+
+### 2. Mutation Burden Pattern
+
+- **Alpha**: Fewest mutations - closer to original strain
+- **Delta**: Moderate mutations
+- **Omicron BA.1**: Most mutations - largest evolutionary jump
+- **Omicron XBB**: Fewer mutations than BA.1 (recombinant origin)
+
+### 3. Mutation Hotspots (typically 29500-30000 bp)
+
+- Located in **spike protein gene** and **3'UTR**
+- Important for viral entry and immune evasion
+- Omicron variants show highest density in this region
+
+### 4. Quality Control Indicators
+
+- **N count** indicates sequencing ambiguity
+- Delta variant often shows ~40 N's (known sequencing issue)
+- Reference should have 0 N's
+
+---
+
+## 🐛 Troubleshooting
+
+### Common Errors and Solutions
+
+| Error | Likely Cause | Solution |
+|-------|--------------|----------|
+| `FileNotFoundError: COVID_Sequence(Reference).fasta` | Wrong file name | Check exact file names match those in the script |
+| `ImportError: No module named 'Bio'` | Biopython not installed | Run `pip install biopython` |
+| `Gene annotation file 'sequence.gb' not found` | Optional file missing | Script continues - only Figures 3-4 won't be generated |
+| Empty mutation results | Sequences full of 'N' characters | Verify FASTA file quality |
+| `PairwiseAligner` errors | Sequences too different | Check sequences are SARS-CoV-2 (similar length ~29,903bp) |
+| matplotlib figure not showing | Backend issue | Add `plt.switch_backend('Agg')` at top of script |
+
+### Platform-Specific Issues
+
+**Windows:**
+- Use `python` instead of `python3`
+- Path separators handled automatically by `os.path`
+
+**macOS/Linux:**
+- May need `python3` command
+- Virtual environment recommended
+
+### Verification Steps
+
+1. **Check Python version:**
+   ```bash
+   python --version  # Should be 3.8-3.11
+   ```
+
+2. **Verify all files exist:**
+   ```bash
+   ls *.fasta  # Should show 5 files
+   ```
+
+3. **Test import:**
+   ```python
+   python -c "import Bio; print(Bio.__version__)"
+   ```
+
+---
+
+## 👨‍💻 For Beginners: Understanding the Code
+
+### What is GC Content?
+
+```python
 def GC_content_calculator(sequence):
-    # Count G's and C's, divide by total, multiply by 100
-    return (sequence.count("G") + sequence.count("C")) / len(sequence) * 100
+    """
+    GC% = (Number of G + Number of C) / Total bases × 100
+    
+    G-C bonds have 3 hydrogen bonds (stronger)
+    A-T bonds have 2 hydrogen bonds (weaker)
+    Higher GC% = more stable genome
+    """
+    seq = str(sequence).upper()
+    
+    # Count each base type
+    g_count = seq.count("G")
+    c_count = seq.count("C")
+    a_count = seq.count("A")
+    t_count = seq.count("T")
+    
+    # Total valid bases (excluding N's)
+    valid_bases = a_count + t_count + g_count + c_count
+    
+    # Calculate percentage
+    if valid_bases == 0:
+        return 0
+    
+    GC_percentage = ((g_count + c_count) / valid_bases) * 100
+    return GC_percentage
+```
 
+### How Mutations Are Found
 
----
+```python
+from Bio.Align import PairwiseAligner
 
-🔄 Future Improvements
+def find_mutations(reference_seq, variant_seq):
+    """
+    Align two sequences and find all differences
+    """
+    aligner = PairwiseAligner()
+    aligner.mode = "global"  # Align entire sequences
+    
+    # Perform alignment
+    alignments = aligner.align(reference_seq, variant_seq)
+    alignment = alignments[0]
+    
+    # Get aligned sequences
+    ref_aligned = alignment[0]
+    var_aligned = alignment[1]
+    
+    # Compare position by position
+    mutations = []
+    for position, (ref_base, var_base) in enumerate(zip(ref_aligned, var_aligned)):
+        if ref_base != var_base and ref_base != 'N' and var_base != 'N':
+            mutations.append({
+                'Position': position + 1,  # 1-based indexing for biologists
+                'Reference': ref_base,
+                'Variant': var_base
+            })
+    
+    return mutations
+```
 
-[ ] Add more variants (Beta, Gamma, other Omicron sublineages)
+### What is a GenBank File?
 
-[ ] Analyze multiple sequences per variant for statistics
+GenBank files (`.gb`) contain **annotation data** - information about where genes start and end:
 
-[ ] Add transition/transversion ratio analysis
+```
+FEATURES             Location/Qualifiers
+     CDS             21563..25384
+                     /gene="S"
+                     /product="spike glycoprotein"
+     CDS             25393..26220
+                     /gene="ORF3a"
+                     /product="ORF3a protein"
+```
 
-[ ] Create interactive dashboard with Plotly
-
-[ ] Add protein-level mutation analysis
-
-[ ] Compare with published literature automatically
-
-
-
----
-
-📚 References
-
-NCBI GenBank: https://www.ncbi.nlm.nih.gov/
-
-SARS-CoV-2 Reference Genome: NC_045512.2
-
-WHO SARS-CoV-2 Variants: https://www.who.int/activities/tracking-SARS-CoV-2-variants
-
-
-
----
-
-👤 Author
-
-Your Name
-
-GitHub: @Maxwellcodebot
-
-Project Link: GitHub Repo
-
-
-
----
-
-📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
----
-
-⭐ Acknowledgments
-
-Thanks to NCBI for providing genomic data
-
-BioPython documentation and community
-
-All scientists working on SARS-CoV-2 genomics
-
-
-
----
-
-📬 Contact
-
-Questions or suggestions? Reach out via:
-
-GitHub Issues
-
-Email: maxwellwisaac@gmail.com
-
-
+The script uses this to determine which gene each mutation falls into.
 
 ---
 
-⚡ Quick Start (One-Liner)
+## 🔄 Future Improvements
 
-pip install biopython pandas numpy matplotlib seaborn tabulate && python sars_cov2_analysis.py
+Planned enhancements:
 
+- [ ] Add support for more variants (Beta, Gamma, Lambda)
+- [ ] Analyze multiple sequences per variant for statistical significance
+- [ ] Add transition/transversion ratio analysis
+- [ ] Create interactive dashboard with Plotly/Dash
+- [ ] Add protein-level mutation analysis (amino acid changes)
+- [ ] Automatically compare with published literature via API
+- [ ] Add phylogenetic tree generation
+- [ ] Implement batch processing for large datasets
+- [ ] Add support for compressed (.gz) input files
 
 ---
 
-If you find this project useful, please give it a star! ⭐
+## 📚 References
+
+### Scientific Resources
+- **NCBI GenBank**: https://www.ncbi.nlm.nih.gov/genbank/
+- **SARS-CoV-2 Reference Genome**: NC_045512.2
+- **WHO Variant Tracking**: https://www.who.int/activities/tracking-SARS-CoV-2-variants
+- **GISAID Database**: https://www.gisaid.org/
+
+### Software Documentation
+- [Biopython Tutorial](http://biopython.org/Documentation/tutorial/tutorial.html)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [Matplotlib Gallery](https://matplotlib.org/stable/gallery/index.html)
+
+### Key Publications
+- Rambaut et al. (2020). "A dynamic nomenclature proposal for SARS-CoV-2 lineages"
+- Korber et al. (2020). "Tracking Changes in SARS-CoV-2 Spike"
 
 ---
 
+## 👤 Author
+
+**Your Name**
+
+- GitHub: [@Maxwellcodebot](https://github.com/Maxwellcodebot)
+- Email: maxwellwisaac@gmail.com
+- Project Repository: [SARS-CoV-2-Genomic-Analysis](https://github.com/Maxwellcodebot/SARS-CoV-2-Genomic-Analysis)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see below:
+
+```
+MIT License
+
+Copyright (c) 2024 Maxwellcodebot
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions...
+
+Full license text: https://opensource.org/licenses/MIT
+```
+
+---
+
+## 🙏 Acknowledgments
+
+- **NCBI** for providing open-access genomic data
+- **Biopython development team** for excellent documentation
+- **Global scientific community** working on SARS-CoV-2 genomics
+- **WHO** for variant classification and tracking
+
+---
+
+## ⚡ Quick Start (One-Liner)
+
+**macOS/Linux:**
+```bash
+git clone https://github.com/Maxwellcodebot/SARS-CoV-2-Genomic-Analysis.git && cd SARS-CoV-2-Genomic-Analysis && pip install biopython pandas numpy matplotlib seaborn tabulate && python sars_cov2_analysis.py
+```
+
+**Windows (PowerShell):**
+```powershell
+git clone https://github.com/Maxwellcodebot/SARS-CoV-2-Genomic-Analysis.git; cd SARS-CoV-2-Genomic-Analysis; pip install biopython pandas numpy matplotlib seaborn tabulate; python sars_cov2_analysis.py
+```
+
+---
+
+## ⭐ Support
+
+If you find this pipeline useful for your research or learning:
+
+- **Star** this repository on GitHub
+- **Cite** this work in your publications
+- **Report issues** via GitHub Issues
+- **Contribute** via Pull Requests
+
+---
+
+**Happy analyzing! 🧬🔬**
